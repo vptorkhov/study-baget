@@ -1,2 +1,1 @@
-# study-baget
- для университета
+https://vptorkhov.github.io/study-baget/
