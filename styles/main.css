@@ -348,4 +348,10 @@ body {
 	.callback__block {
 		width: 50%;
 	}
+	.registration__block{
+		width: 80%;
+	}
+	.registration__form{
+		width: 70%;
+	}
 }
