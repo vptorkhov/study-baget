@@ -7,32 +7,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles/main.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-		<meta name="viewport" content="width=device-width; initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+		<meta name="viewport" content="width=575,   maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
 	</head>
 	<body>
-		<!-- <div class="header">
-			<div class="container">
-				<div class="menu">
-					<div class="wrap1">
-						<img alt="" src="img/logo.png" class="logo">
-						<a class="menu-link" href="index.html">Главная</a>
-						<div class="menu-link-dropdown" >
-							<a class="menu-link-dropdown__title" href="#">Услуги</a>
-							<ul>
-								<li><a href="service.html">Производство</a></li>
-								<li><a href="service.html">Подбор</a></li>
-								<li><a href="service.html">Объектное оформление</a></li>
-								<li><a href="service.html">Обрамление зеркал</a></li>
-							</ul>
-						</div>
-						<a class="menu-link" href="catalog.html">Каталог</a>
-						<a class="menu-link" href="about.html">О нас</a>
-						<a class="menu-link" href="contacts.html">Контакты</a>
-					</div>
-					<a class="menu-link" href="registration.html">Регистрация/Вход</a>
-				</div>
-			</div>
-		</div> -->
 		<div class="header">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
@@ -52,10 +30,10 @@
 									Услуги
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="service.html">Производство</a></li>
-									<li><a class="dropdown-item" href="service.html">Подбор</a></li>
-									<li><a class="dropdown-item" href="service.html">Объектное оформление</a></li>
-									<li><a class="dropdown-item" href="service.html">Обрамление зеркал</a></li>
+									<li><a class="dropdown-item" href="production.html">Производство</a></li>
+									<li><a class="dropdown-item" href="selection.html">Подбор</a></li>
+									<li><a class="dropdown-item" href="object.html">Объектное оформление</a></li>
+									<li><a class="dropdown-item" href="mirror.html">Обрамление зеркал</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -78,8 +56,35 @@
 			</nav>
 		</div>
 		<div class="main">
-			<div class="container">
-				<div class="slider">Слайдер</div>
+			<div class="main-slider">
+				<div class="container">
+					<div class="swiper mainSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/main-slider-1.jpg" alt="">
+								<div class="main-slider__title">Производство</div>
+								<a href="production.html" class="btn-slider">Смотреть</a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main-slider-2.jpg" alt="">
+								<div class="main-slider__title">Производство</div>
+								<a href="production.html" class="btn-slider">Смотреть</a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main-slider-3.jpg" alt="">
+								<div class="main-slider__title">Производство</div>
+								<a href="production.html" class="btn-slider">Смотреть</a>
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main-slider-4.jpg" alt="">
+								<div class="main-slider__title">Производство</div>
+								<a href="production.html" class="btn-slider">Смотреть</a>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
 			</div>
 			<div class="advantages">
 				<div class="container">
@@ -117,52 +122,148 @@
 					<div class="catalog__title">Популярные товары</div>
 					<div class="row">
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 						<div class="col-lg-3 col-6">
-							<div class="catalog__card">Карточка товара</div>
+							<div class="catalog__card">
+								<img src="img/card-img.jpg" alt="" class="catalog__card-img">
+								<div class="catalog__card-wrap">
+									<div class="catalog__card-title">Багетная рамка</div>
+									<a href="#" class="catalog__card-btn">Подробнее</a>
+								</div>
+							</div>
 						</div>
 					</div>
 					<a class="catalog__btn" href="catalog.html">В каталог</a>
@@ -178,18 +279,30 @@
 			<div class="examples">
 				<div class="container">
 					<div class="examples__title">Примеры работ</div>
-					<!-- <div class="row">
-						<div class="col-lg-4 col-12">
-							<div class="examples__card">Слайд</div>
+					<div class="swiper specSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/main-slider-1.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main-slider-2.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main-slider-3.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main-slider-4.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main-slider-4.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/main-slider-4.jpg" alt="">
+							</div>
 						</div>
-						<div class="col-lg-4 col-12">
-							<div class="examples__card">Слайд</div>
-						</div>
-						<div class="col-lg-4 col-12">
-							<div class="examples__card">Слайд</div>
-						</div>
-					</div> -->
-					<div class="examples__block">Здесь будет слайдер</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -204,6 +317,7 @@
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<script src="scripts/common.js"></script>
 	</body>
 </html>
