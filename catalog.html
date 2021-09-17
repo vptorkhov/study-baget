@@ -56,8 +56,38 @@
 		</div>
 		<div class="main">
 			<div class="main__title">Каталог</div>
-			<div class="filter container">
-				Фильтры
+			<div class="filter">
+				<form action="">
+					<div class="container">
+						<div class="form-wrap">
+							<div class="price">
+								<div class="form-wrap__item">
+									<label>Цена от</label>
+									<input type="text" placeholder="Введите число:" name="catalog-price-down">
+								</div>
+								<div class="form-wrap__item">
+									<label>Цена до</label>
+									<input type="text" placeholder="Введите число:" name="catalog-price-up">
+								</div>
+							</div>
+							<div class="checks">
+								<div class="form-wrap__item">
+									<label class="check-label">Дуб</label>
+									<input class="checkbox" type="checkbox" name="catalog-material-wood">
+								</div>
+								<div class="form-wrap__item">
+									<label class="check-label">Сосна</label>
+									<input class="checkbox" type="checkbox" name="catalog-material-pine">
+								</div>
+								<div class="form-wrap__item">
+									<label class="check-label">Пихта</label>
+									<input class="checkbox" type="checkbox" name="catalog-material-fir">
+								</div>
+							</div>
+							<input type="submit" class="form-wrap__submit" value="Фильтровать">
+						</div>
+					</div>
+				</form>
 			</div>
 			<div class="catalog">
 				<div class="container">
