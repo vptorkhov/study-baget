@@ -326,7 +326,7 @@ body {
 	border-radius: 5px;
 	border: 1px solid black;
 }
-.filter .form-wrap__submit{
+.filter .form-wrap__submit {
 	max-height: 40px;
 	background-color: #ffffff;
 	border-radius: 5px;
@@ -357,7 +357,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 }
-.contacts__block p{
+.contacts__block p {
 	font-size: 20px;
 	margin-bottom: 20px;
 }
@@ -365,7 +365,7 @@ body {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-.map iframe{
+.map iframe {
 	width: 100%;
 }
 .registration {
@@ -376,9 +376,10 @@ body {
 	display: block;
 	border: 1px solid black;
 	margin: 0 auto;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding: 50px;
 	width: 600px;
+	max-width: 100%;
+	border-radius: 5px;
 }
 .registration__title {
 	padding-top: 100px;
@@ -389,12 +390,39 @@ body {
 	padding-bottom: 20px;
 }
 .registration__form {
-	height: 400px;
-	width: 400px;
-	background-color: whitesmoke;
+	width: 100% !important;
+}
+.registration__form input {
+	width: 100%;
 	display: block;
-	border: 1px solid black;
-	margin: 0 auto;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	margin-bottom: 10px;
+}
+.registration__form textarea {
+	width: 100%;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	margin-bottom: 10px;
+	max-height: 200px;
+	height: 120px;
+}
+.registration__form .submit {
+	width: 150px;
+	max-width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border: 1px solid grey;
+	background-color: #ffffff;
+	transition-duration: 0.4s;
+}
+.registration__form .submit:hover {
+	background-color: #eeeeee;
 }
 .registration__login {
 	text-align: center;
@@ -418,6 +446,7 @@ body {
 	padding: 20px;
 	position: absolute;
 	display: block;
+	text-align: center;
 	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -451,14 +480,14 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
-@media (max-width:992px){
+@media (max-width: 992px) {
 	.filter .form-wrap {
 		flex-direction: column;
 	}
-	.filter .form-wrap>*{
+	.filter .form-wrap > * {
 		margin-bottom: 20px;
 	}
-	.form-wrap__item{
+	.form-wrap__item {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
