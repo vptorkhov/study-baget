@@ -59,3 +59,7 @@ var mainSlider = document.querySelectorAll('.main-slider');
 for (var i=0; i<mainSlider.length;i++){
 	mainSlider[i].style.display="block";
 }
+var exampleSlider = document.querySelectorAll('.examples');
+for (var i=0; i<exampleSlider.length;i++){
+	exampleSlider[i].style.display="block";
+}
