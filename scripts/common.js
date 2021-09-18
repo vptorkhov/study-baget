@@ -54,3 +54,8 @@ var swiper = new Swiper(".specSwiper", {
 		}
 	}
 });
+
+var mainSlider = document.querySelectorAll('.main-slider');
+for (var i=0; i<mainSlider.length;i++){
+	mainSlider[i].style.display="block";
+}
