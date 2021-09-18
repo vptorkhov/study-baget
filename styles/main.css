@@ -440,6 +440,9 @@ body {
 .swiper-slide {
 	position: relative;
 }
+.main-slider{
+	display:none;
+}
 .main-slider__title {
 	font-size: 30px;
 	background-color: rgba(250, 250, 250, 0.8);
